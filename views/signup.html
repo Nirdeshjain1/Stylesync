@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleSync - Sign Up</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>StyleSync</h1>
+    <p>Your personalized fashion assistant</p>
+  </header>
+
+  <main>
+    <section class="signup-form">
+      <h2>Create Your Account</h2>
+      <p>Join StyleSync to get personalized clothing, accessory, and makeup recommendations.</p>
+      
+      <form action="/signup" method="POST" id="signupForm">
+        <!-- User Details Section -->
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+        
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required placeholder="Enter your age" min="1">
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <!-- Username and Password Section -->
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required placeholder="Choose a username">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required placeholder="Create a password">
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p class="signup-footer">Already have an account? <a href="/login">Login here</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 StyleSync. All rights reserved.</p>
+  </footer>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>

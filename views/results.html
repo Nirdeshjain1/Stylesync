@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleSync - Your Personalized Results</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>StyleSync</h1>
+    <p>Your personalized fashion assistant</p>
+  </header>
+
+  <main>
+    <section class="results">
+      <h2>Suggested Styles for You</h2>
+      <p>Based on your preferences, body shape, and skin tone, we've curated the following clothing, accessories, and makeup options. Select your favorites to create the perfect outfit!</p>
+      
+      <!-- Clothing List -->
+      <div class="section">
+        <h3>Clothing</h3>
+        <div class="item-list">
+          <!-- Example of a clothing item -->
+          <div class="item">
+            <img src="clothing_item1.jpg" alt="Clothing Item 1">
+            <label>
+              <input type="checkbox" name="clothing" value="clothing1"> Clothing Item 1
+            </label>
+          </div>
+          <div class="item">
+            <img src="clothing_item2.jpg" alt="Clothing Item 2">
+            <label>
+              <input type="checkbox" name="clothing" value="clothing2"> Clothing Item 2
+            </label>
+          </div>
+          <!-- More clothing items can be added similarly -->
+        </div>
+      </div>
+
+      <!-- Accessories List -->
+      <div class="section">
+        <h3>Accessories</h3>
+        <div class="item-list">
+          <!-- Example of an accessory -->
+          <div class="item">
+            <img src="accessory1.jpg" alt="Accessory 1">
+            <label>
+              <input type="checkbox" name="accessories" value="accessory1"> Accessory 1
+            </label>
+          </div>
+          <div class="item">
+            <img src="accessory2.jpg" alt="Accessory 2">
+            <label>
+              <input type="checkbox" name="accessories" value="accessory2"> Accessory 2
+            </label>
+          </div>
+          <!-- More accessories can be added similarly -->
+        </div>
+      </div>
+
+      <!-- Makeup List -->
+      <div class="section">
+        <h3>Makeup</h3>
+        <div class="item-list">
+          <!-- Example of makeup -->
+          <div class="item">
+            <img src="makeup1.jpg" alt="Makeup Item 1">
+            <label>
+              <input type="checkbox" name="makeup" value="makeup1"> Makeup Item 1
+            </label>
+          </div>
+          <div class="item">
+            <img src="makeup2.jpg" alt="Makeup Item 2">
+            <label>
+              <input type="checkbox" name="makeup" value="makeup2"> Makeup Item 2
+            </label>
+          </div>
+          <!-- More makeup items can be added similarly -->
+        </div>
+      </div>
+
+      <!-- Submit Button to Create Outfit -->
+      <section class="cta">
+        <button id="createOutfitBtn">Create My Outfit</button>
+      </section>
+
+      <section id="outfitPreview">
+        <!-- The AI-generated outfit will appear here -->
+        <h3>Your Personalized Outfit</h3>
+        <div id="outfit"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 StyleSync. All rights reserved.</p>
+  </footer>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>

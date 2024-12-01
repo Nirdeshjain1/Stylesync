@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleSync - Preferences</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>StyleSync</h1>
+    <p>Let us know more about you to create personalized recommendations!</p>
+  </header>
+  <main>
+    <form action="/preferences" method="POST">
+      <!-- Body Shape Selection -->
+      <label for="body_shape">Select Your Body Shape:</label>
+      <select name="body_shape" id="body_shape" required>
+        <option value="">-- Choose --</option>
+        <option value="hourglass">Hourglass</option>
+        <option value="pear">Pear</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="apple">Apple</option>
+        <option value="inverted_triangle">Inverted Triangle</option>
+      </select>
+      <img id="body_shape_preview" src="/images/body_shapes/default.png" alt="Body Shape Preview">
+
+      <!-- Skin Tone Selection -->
+      <label for="skin_tone">Select Your Skin Tone:</label>
+      <select name="skin_tone" id="skin_tone" required>
+        <option value="">-- Choose --</option>
+        <option value="cool">Cool</option>
+        <option value="warm">Warm</option>
+        <option value="neutral">Neutral</option>
+      </select>
+      <img id="skin_tone_preview" src="/images/skin_tones/default.png" alt="Skin Tone Preview">
+
+      <label for="clothing_preference">Your Clothing Preferences:</label>
+      <input type="text" id="clothing_preference" name="clothing_preference" required>
+
+      <button type="submit">Get Recommendations</button>
+    </form>
+  </main>
+  <script src="/scripts/scripts.js"></script>
+</body>
+</html>

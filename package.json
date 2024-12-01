@@ -1,0 +1,43 @@
+{
+    "name": "stylesync",
+    "version": "1.0.0",
+    "description": "A personalized fashion assistant web application.",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "body-parser": "^1.20.2",
+        "mongoose": "^7.5.1",
+        "ejs": "^3.1.9",
+        "dotenv": "^16.0.3",
+        "bcryptjs": "^2.4.3",
+        "express-session": "^1.17.3",
+        "nodemon": "^2.0.22"
+    },
+    "devDependencies": {
+        "eslint": "^8.32.0"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yourusername/stylesync.git"
+    },
+    "author": "Sachin",
+    "license": "ISC",
+    "keywords": [
+        "fashion",
+        "AI",
+        "personalized",
+        "styling",
+        "web-app"
+    ],
+    "bugs": {
+        "url": "https://github.com/yourusername/stylesync/issues"
+    },
+    "homepage": "https://github.com/yourusername/stylesync#readme"
+}
